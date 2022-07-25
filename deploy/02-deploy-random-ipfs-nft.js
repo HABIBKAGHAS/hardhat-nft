@@ -22,7 +22,7 @@ const tokenUris = [
     "ipfs://QmPvguzhTyY2PoYBpUZvszw9GhLMZot9M1hYuEq94GVzVF"
 ];
 
-const FUND_AMOUNT = ethers.utils.parseUnits("0.1");
+const FUND_AMOUNT = "1000000000000000000000";
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
@@ -42,7 +42,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         const tx = await vrfCoordinatorV2Mock.createSubscription();
         const txReciept = await tx.wait(1);
         subscriptionId = txReciept.events[0].args.subId;
-        await vrfCoordinatorV2Mock.fundSubscription(subscriptionId);
+        await vrfCoordinatorV2Mock.fundSubscription(subscriptionId, FUND_AMOUNT);
     } else {
         vrfCoordinatorV2address = networkConfig[chainId].vrfCoordinatorV2Address;
         subscriptionId = networkConfig[chainId].subscriptionId;
