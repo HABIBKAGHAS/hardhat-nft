@@ -529,8 +529,8 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\VRFCoordinatorV2Interface.sol": {
-      "lastModificationDate": 1658050455386,
-      "contentHash": "56ec852a2aeddf81bf5a5720a7fc6a63",
+      "lastModificationDate": 1658993636299,
+      "contentHash": "8c9ed3426b676f67ee200a2bec96e224",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -571,7 +571,7 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.8\\VRFConsumerBaseV2.sol": {
-      "lastModificationDate": 1658050454769,
+      "lastModificationDate": 1658993634714,
       "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
       "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
       "solcConfig": {
@@ -657,8 +657,8 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.8\\mocks\\VRFCoordinatorV2Mock.sol": {
-      "lastModificationDate": 1658050455402,
-      "contentHash": "0e99ed258a59dc48bc432008b39453cd",
+      "lastModificationDate": 1658993636336,
+      "contentHash": "a78f72f6c18077e727bc06d7f96b2031",
       "sourceName": "@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -703,7 +703,7 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\LinkTokenInterface.sol": {
-      "lastModificationDate": 1658050455370,
+      "lastModificationDate": 1658993636249,
       "contentHash": "da5a0c3bd86c896f6a407f909c57edf3",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol",
       "solcConfig": {
@@ -786,6 +786,136 @@
       ],
       "artifacts": []
     },
+    "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\contracts\\DynamicSvgNft.sol": {
+      "lastModificationDate": 1659003851152,
+      "contentHash": "76fea60c5fd587fb08a7dbbfd41f6ec3",
+      "sourceName": "contracts/DynamicSvgNft.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "base64-sol/base64.sol",
+        "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.7"
+      ],
+      "artifacts": [
+        "DynamicSvgNft"
+      ]
+    },
+    "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\base64-sol\\base64.sol": {
+      "lastModificationDate": 1658988292096,
+      "contentHash": "0d54cb6a748ddde95d92ed7802c9248d",
+      "sourceName": "base64-sol/base64.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV3Interface.sol": {
+      "lastModificationDate": 1658993636177,
+      "contentHash": "d9654a0fc044a31d4106ee6bca772add",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\contracts\\test\\MockV3Aggregator.sol": {
       "lastModificationDate": 1658730194480,
       "contentHash": "5abc73bd49c829d4a9d55ec639f45625",
@@ -829,7 +959,7 @@
       "artifacts": []
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.6\\tests\\MockV3Aggregator.sol": {
-      "lastModificationDate": 1658050455109,
+      "lastModificationDate": 1658993635516,
       "contentHash": "b1f27d8f04303e8c78cd057685d883f6",
       "sourceName": "@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol",
       "solcConfig": {
@@ -873,7 +1003,7 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorV2V3Interface.sol": {
-      "lastModificationDate": 1658050455012,
+      "lastModificationDate": 1658993635334,
       "contentHash": "6b76a24083942363411bb0b83ffeb997",
       "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol",
       "solcConfig": {
@@ -918,7 +1048,7 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorInterface.sol": {
-      "lastModificationDate": 1658050455010,
+      "lastModificationDate": 1658993635329,
       "contentHash": "0c9be74e354bca05abc54edfdc49607e",
       "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol",
       "solcConfig": {
@@ -960,8 +1090,8 @@
       ]
     },
     "C:\\Users\\habib\\Documents\\GitHub\\hardhat-nft\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorV3Interface.sol": {
-      "lastModificationDate": 1658050455014,
-      "contentHash": "57d487d5ebb80b57ceb68a4d9bd884e3",
+      "lastModificationDate": 1658993635346,
+      "contentHash": "79f9f2c352a0b4454d1416042e7f7ae0",
       "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol",
       "solcConfig": {
         "version": "0.6.12",
