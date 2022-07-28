@@ -34,14 +34,15 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     }
 
     let vrfCoordinatorV2address, subscriptionId;
-
-    if (developmentChains.includes(network.name)) {
+    console.log(chainId);
+    if (chainId === 31337) {
         const vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock");
         vrfCoordinatorV2address = vrfCoordinatorV2Mock.address;
 
         const tx = await vrfCoordinatorV2Mock.createSubscription();
-        const txReciept = await tx.wait(1);
+        const txReciept = await tx.wait();
         subscriptionId = txReciept.events[0].args.subId;
+
         await vrfCoordinatorV2Mock.fundSubscription(subscriptionId, FUND_AMOUNT);
     } else {
         vrfCoordinatorV2address = networkConfig[chainId].vrfCoordinatorV2Address;
@@ -50,13 +51,14 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     log("--------------------------------------------------");
 
+    console.log({ subscriptionId });
+
     const args = [
         vrfCoordinatorV2address,
         subscriptionId,
         networkConfig[chainId].gasLane,
         networkConfig[chainId].callbackGasLimit,
         tokenUris,
-
         networkConfig[chainId].mintFee
     ];
 
